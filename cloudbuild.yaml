@@ -5,7 +5,7 @@ steps:
   entrypoint: /bin/sh
   args:
   - -c
-  - 'pip install -r requirements.txt && app/pytest --maxfail=1'
+  - 'pip install -r requirements.txt && cd app && pytest -v --maxfail=1'
 
 # This step builds the container image.
 
