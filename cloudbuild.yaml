@@ -44,6 +44,7 @@ steps:
     - '--region=$_DEPLOY_REGION'
     - '--quiet'
     - '--port=80'
+    - '--allow-unauthenticated'
   id: Deploy
   entrypoint: gcloud
 
