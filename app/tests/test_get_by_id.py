@@ -19,5 +19,5 @@ def test_get_by_id_1_should_response_200():
 
 def test_get_by_id_4_should_response_404():
     response = client.get("/pets/4", headers={"X-Token": "coneofsilence"})
-    assert response.status_code == 403
+    assert response.status_code == 404
     assert response.json() == {"detail": "Not found"}
